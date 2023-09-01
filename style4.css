@@ -15,7 +15,7 @@ body{
 }
 .hero_section{
     background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/04/Backgrounds-fishing-boat-desktop-wallpaper-HD.jpg);
-    min-height: 700px;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -25,13 +25,13 @@ body{
 .ABC{
     font-weight: 400;
     line-height: 1.6;
-    box-shadow: 3px 5px 4px rgba(1,1,1,1));
+    
 }
 
 .text_container{
     color:black
     max-width: 900px;
-  
+    margin:0 auto;
     padding-top: 60px;
     padding-left: 15px;
 }
@@ -44,9 +44,7 @@ body{
 .AB{
     font-size: 30px;
     font-weight: 300;
-    color: black;
-  
-  
+    color: black; 
    
 }
 
@@ -67,10 +65,11 @@ body{
 }
 .work{
     display: grid;
-    padding: auto;
+   gap: 20px;
     grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
-    justify-content: center;
-    align-items: center;
+    max-width: 1100px;
+    margin: 50px auto;
+   
     padding-top: 35px;
    
 }
@@ -86,9 +85,7 @@ body{
 }
 .image_container{
     min-height: 50px;
-   
-    
-   
+
     padding-left:75px;
     border: 2px solid black;
 
@@ -109,16 +106,18 @@ body{
 .bottom_section{
    
     margin-top: 30px;
-    display: flex;
+    
 }
 p{
     color: white;
 }
 .contact{
     background-color: rgb(98, 92, 92);
+   
 }
 .Address{
     background-color: rgb(112, 77, 77);
+    
 }
 .Contact_1{
     font-size: 25px;
@@ -137,3 +136,34 @@ span{
     font-size: 72px;
     color: white;
 }
+ @media (max-width: 786px;){
+   .hero_section{
+    min-height: 50vh;
+    text-align: center;
+   }
+   .Ig_text{
+    font-size: 32px;
+
+   }
+    .black_box h2 {
+        font-size: 24px;
+
+    }
+    .black_box h2 span{
+        font-weight: 400;
+        font-size: 32px;
+    }
+    .bottom_section{
+        flex-direction: column;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .Address{
+        flex-direction: column;
+    }
+    .work{
+        margin-top: 10px;
+    }
+
+ }
